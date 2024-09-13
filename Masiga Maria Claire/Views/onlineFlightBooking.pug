@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Online Flight Booking Form
+    link(rel="stylesheet" href="/Css/style.css")
+
+  body
+    .container
+      .header
+        .logo
+          img(src="/Images/Header.PNG" alt="Rim Aviation Group Logo")
+
+      form(action="/book" method="post" id="bookingForm")
+        .form-section
+          h2 PASSENGER INFORMATION
+          label(for="fullname") Full Name
+            span.required * 
+          input(type="text" id="fullname" name="fullname" placeholder="Enter your full name" required)
+
+          label(for="gender") Gender
+            span.required * 
+          select(id="gender" name="gender" required)
+            option(value="") -- Select --  
+            option(value="male") Male
+            option(value="female") Female
+
+          label(for="dob") Date of Birth
+            span.required * 
+          input(type="date" id="dob" name="dob" required)
+
+          label(for="nationality") Nationality
+            span.required * 
+          input(type="text" id="nationality" name="nationality" placeholder="Enter your nationality" required)
+
+        .form-section
+          h2 CONTACT INFORMATION
+          label(for="phone") Phone Number
+            span.required * 
+          input(type="text" id="phone" name="phone" placeholder="Enter your phone number" required)
+
+          label(for="email") Email Address
+            span.required * 
+          input(type="email" id="email" name="email" placeholder="Enter your email" required)
+
+          label(for="pobox") P.O. BOX Number
+          input(type="text" id="pobox" name="pobox" placeholder="Enter your P.O. Box (optional)")
+
+          label(for="emergency_phone") Emergency Phone Number
+            span.required * 
+          input(type="text" id="emergency_phone" name="emergency_phone" placeholder="Enter emergency phone number" required)
+
+        .form-section
+          h2 FLIGHT INFORMATION
+          label(for="passport") Passport Number
+            span.required * 
+          input(type="text" id="passport" name="passport" placeholder="Enter your passport number" required)
+
+          label(for="visa") Visa Document
+            span.required * 
+          input(type="file" id="visa" name="visa" required)
+
+          label(for="departure_city") Departure City
+            span.required * 
+          input(type="text" id="departure_city" name="departure_city" placeholder="Enter departure city" required)
+
+          label(for="destination_city") Destination City
+            span.required * 
+          input(type="text" id="destination_city" name="destination_city" placeholder="Enter destination city" required)
+
+        button(type="submit") SUBMIT
+
+    script(src="/Scripts/clientside.js")

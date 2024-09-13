@@ -1,0 +1,103 @@
+/* General styling for the container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for a clean look */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header styling */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-height: 200px; /* Reduced height for a more balanced header */
+  object-fit: cover;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between form sections for a book-like feel */
+}
+
+/* Individual form sections */
+.form-section {
+  padding: 20px;
+  border-left: 3px solid red; /* Red vertical line on the left */
+  border-radius: 8px; /* Rounded corners for each section */
+  background-color: #fff; /* White background for each section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+}
+
+/* Remove left border from the first section */
+.form-section:first-child {
+  border-left: none;
+}
+
+/* Section heading styling */
+.form-section h2 {
+  color: red;
+  margin-bottom: 15px;
+  border-bottom: 2px solid red; /* Red line under section heading */
+  padding-bottom: 10px;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Required field indicator */
+span.required {
+  color: red;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select {
+  width: 50%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Input file styling */
+input[type="file"] {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Invalid field message styling */
+span.invalid {
+  color: red;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[type="submit"]:hover {
+  background-color: darkred;
+}
